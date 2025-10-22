@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* الخلفية الجديدة */
+    background-image: url('milky_way.jpg'); /* تأكد من أن اسم الصورة صحيح */
+    background-size: cover; /* لتغطية الخلفية بالكامل */
+    background-attachment: fixed; /* لتثبيت الصورة عند التمرير */
+    background-position: center; /* لتوسيط الصورة */
+    /* باقي التنسيقات الأصلية */
+    color: #333; /* قد تحتاج لتغيير لون النص ليكون مرئياً على الخلفية الداكنة */
+    margin: 0;
+    padding: 0;
+    direction: rtl; 
+    text-align: right;
+}
+
+/* ستحتاج أيضاً إلى جعل حاويات المحتوى (مثل .container) شفافة قليلاً أو ذات خلفية بيضاء لجعل النص مقروءاً */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* خلفية بيضاء شبه شفافة */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* ظل أوضح */
+    line-height: 1.8;
+    border-radius: 8px; /* حواف مستديرة للمحتوى */
+}
+
+/* قد تحتاج لتعديل لون النص في بعض الأماكن ليكون واضحاً */
+h1, h2, h3 {
+    color: #0078d4; /* حافظ على اللون الأزرق أو اختر لوناً فاتحاً */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* خلفية رأسية شبه شفافة داكنة */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* خلفية شريط التنقل شبه شفافة داكنة */
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: white; /* تأكد أن لون الروابط أبيض ليظهر على الخلفية الداكنة */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* خلفية التذييل شبه شفافة داكنة */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /* تم إزالة position: fixed لتجنب التداخل مع المحتوى الطويل */
+    width: 100%;
+    position: relative; /* لضمان ظهوره في الأسفل بعد المحتوى */
+    bottom: 0;
+}
